@@ -1,0 +1,122 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">		
+	</head>
+	<body>
+		
+	</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>IJIF - Home Automation</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar no-margin" id="top-bar">
+                <div class="navbar-header fixed-brand">
+                    <a class="navbar-brand" href="IJIF_Main.html" id="title-link"><i class="fa fa-rocket fa-4"></i> IJIF Home Automation</a>
+                </div><!-- navbar-header-->
+    </nav>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav-pills nav-stacked " id="menu">
+ 
+                <li>
+                    <a href="IJIF_Main.html"><span class="icon"> <img src="img/menu-4-32.png"> </span>Main Menu</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon"> <img src="img/temperature-2-32.png"> </span> Temperature</a>
+                </li>
+                <li class="activated">
+                    <a href="Doors.html"><span class="icon"> <img src="img/door-5-32.png"> </span>Doors</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon"> <img src="img/window-layout-32.png"> </span>Windows</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon"> <img src="img/light-bulb-4-32.png"> </span>Electrical</a>
+                </li>
+                <li>
+                    <a href="Surveillance.html"><span class="icon"> <img src="img/webcam-4-32.png"> </span>Surveillance</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon"> <img src="img/settings-7-32.png"> </span>Settings</a>
+                </li>
+            </ul>
+        </div><!-- /#sidebar-wrapper -->
+        <!-- Main page -->
+        <div id="main-menu">
+			<div class="menu-entry left-side">
+				<img src="img/front-door.jpg" class="door-img left-side">
+				<p class="door-title-text">Front Door</p>
+				<p class="door-info-text left-side" >Door Control
+					<label class="switch door-switch right-side">
+						<input type="checkbox" class="switch-input" id="front-door-control" checked>
+						<span class="switch-label" data-on="Closed" data-off="Opened"></span>
+						<span class="switch-handle door-switch-handle"></span>
+					</label>
+				</p>
+				<p class="door-info-text left-side" >Lock Control
+					<label class="switch door-switch right-side">
+						<input type="checkbox" class="switch-input" id="front-door-lock" checked>
+						<span class="switch-label" data-on="Locked" data-off="Unlocked"></span>
+						<span class="switch-handle door-switch-handle"></span>
+					</label>
+				</p>
+			</div>
+			<div class="menu-entry right-side">
+				<img src="img/back-door.jpg" class="door-img left-side">
+				<p class="door-title-text">Back Door</p>
+				<p class="door-info-text left-side" >Door Control
+					<label class="switch door-switch right-side">
+						<input type="checkbox" class="switch-input" id="back-door-control" checked>
+						<span class="switch-label" data-on="Closed" data-off="Opened"></span>
+						<span class="switch-handle door-switch-handle"></span>
+					</label>
+				</p>
+				<p class="door-info-text left-side">Lock Control
+					<label class="switch door-switch right-side">
+						<input type="checkbox" class="switch-input" id="back-door-lock" checked>
+						<span class="switch-label" data-on="Locked" data-off="Unlocked"></span>
+						<span class="switch-handle door-switch-handle"></span>
+					</label>
+				</p>
+			</div>
+			<div class="menu-entry left-side">
+				<img src="img/side-door.jpg" class="door-img left-side">
+				<p class="door-title-text">Side Door</p>
+				<p class="door-info-text left-side">Door Control
+					<label class="switch door-switch right-side">
+						<input type="checkbox" class="switch-input" id="side-door-control" checked>
+						<span class="switch-label" data-on="Closed" data-off="Opened"></span>
+						<span class="switch-handle door-switch-handle"></span>
+					</label>
+				</p>
+				<p class="door-info-text left-side">Lock Control
+					<label class="switch door-switch right-side">
+						<input type="checkbox" class="switch-input" id="side-door-lock" checked>
+						<span class="switch-label" data-on="Locked" data-off="Unlocked"></span>
+						<span class="switch-handle door-switch-handle"></span>
+					</label>
+				</p>
+			</div>
+			</div>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="scripts/jquery-1.12.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/sidebar_menu.js"></script>
+	<script src="scripts/door-state.js"></script>
+</body>
+</html>

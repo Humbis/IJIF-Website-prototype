@@ -1,0 +1,98 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="styles.css">		
+	</head>
+	<body>
+		
+	</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>IJIF - Home Automation</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="font-awesome-4.6.3/css/font-awesome.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar no-margin" id="top-bar">
+                <div class="navbar-header fixed-brand">
+                    <a class="navbar-brand" href="IJIF_Main.html" id="title-link"><i class="fa fa-rocket fa-4"></i> IJIF Home Automation</a>
+                </div><!-- navbar-header-->
+    </nav>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav nav-pills nav-stacked " id="menu">
+ 
+                <li class="activated">
+                    <a href="IJIF_Main.html"><span class="icon"> <img src="img/menu-4-32.png"> </span>Main Menu</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon"> <img src="img/temperature-2-32.png"> </span> Temperature</a>
+                </li>
+                <li>
+                    <a href="Doors.html"><span class="icon"> <img src="img/door-5-32.png"> </span>Doors</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon"> <img src="img/window-layout-32.png"> </span>Windows</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon"> <img src="img/light-bulb-4-32.png"> </span>Electrical</a>
+                </li>
+                <li>
+                    <a href="Surveillance.html"><span class="icon"> <img src="img/webcam-4-32.png"> </span>Surveillance</a>
+                </li>
+                <li>
+                    <a href="#"><span class="icon"> <img src="img/settings-7-32.png"> </span>Settings</a>
+                </li>
+            </ul>
+        </div><!-- /#sidebar-wrapper -->
+        <!-- Main page -->
+		<div id="main-menu">
+			<div class="menu-entry left-side hoverable" id="temp-info">
+				<img class="left-side main-icon" src="img/temperature-2-256.png">
+				<h1 class="main-info-header"> 17°C </h1>
+				<p class="main-info-text">Average Household temperature</p>
+			</div>
+			<div class="menu-entry right-side hoverable" id="door-info">
+				<img class="left-side main-icon" src="img/door-9-256.png">
+				<h1 class="main-info-header" id="doorlock-count"> 0 </h1>
+				<p class="main-info-text" id="doorstate-count">Doors Unlocked <br/>0 Doors Opened</p>
+			</div>
+			<div class="menu-entry left-side hoverable" id="window-info">
+				<img class="left-side main-icon" src="img/opened-window-door-of-glasses.png">
+				<h1 class="main-info-header"> 3 </h1>
+				<p class="main-info-text">Windows Opened</p>
+			</div>
+			<div class="menu-entry right-side hoverable" id="electrical-info">
+				<img class="left-side main-icon" src="img/light-bulb-256.png">
+				<h1 class="main-info-header"> 2 </h1>
+				<p class="main-info-text">Sets of lights On</p>			
+			</div>
+			<div class="menu-entry left-side hoverable" id="camera-info">
+				<img class="left-side main-icon" src="img/slr-camera-256.png">
+				<h1 class="main-info-header"> 2 </h1>
+				<p class="main-info-text">Surveillance Cameras On</p>
+				
+			</div>
+			<div class="menu-entry right-side hoverable" id="settings-info">
+				<img class="left-side main-icon" src="img/settings-5-256.png">
+				<h1 class="main-info-header" style="font-size: 54;"><br/>Settings</h1>
+			</div>
+		</div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="scripts/jquery-1.12.3.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/sidebar_menu.js"></script>
+	<!-- Clickable menu item script-->
+	<script src="scripts/main-menu-items.js"></script> 
+</body>
+</html>
